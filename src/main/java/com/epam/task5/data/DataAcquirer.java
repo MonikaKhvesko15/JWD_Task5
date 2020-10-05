@@ -4,5 +4,5 @@ import java.io.IOException;
 import java.util.List;
 
 public interface DataAcquirer {
-    List<String> getText() throws DataException, IOException;
+    List<String> getText(String filename) throws DataException, IOException;
 }

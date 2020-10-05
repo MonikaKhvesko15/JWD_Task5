@@ -1,5 +1,5 @@
 package com.epam.task5.view;
 
 public interface PrintFactory {
-    Printer createPrinter(OutputType outputType);
+    Printer createPrinter();
 }
