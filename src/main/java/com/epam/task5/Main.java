@@ -3,6 +3,7 @@ package com.epam.task5;
 import com.epam.task5.data.*;
 import com.epam.task5.logic.*;
 import com.epam.task5.logic.factory.Transform;
+import com.epam.task5.logic.factory.TransformType;
 import com.epam.task5.logic.factory.TransformerFactory;
 import com.epam.task5.view.PrintFactory;
 import com.epam.task5.view.PrintResultFactory;
@@ -28,7 +29,7 @@ public class Main {
 
         //transform text
         Transform transform=new TransformerFactory();
-        WordProcessing processing=transform.createTransformer();
+        WordProcessing processing=transform.createTransformer(TransformType.CHAR);//CHAR
         List<String> textResult = processing.transformText(text, POSITION, LETTER);
 
 
