@@ -1,7 +1,7 @@
 package com.epam.task5.logic.factory;
 
 import com.epam.task5.logic.WordProcessing;
-import com.epam.task5.logic.WordProcessingChar;
+import com.epam.task5.logic.WordProcessingRegex;
 import com.epam.task5.logic.WordProcessingInString;
 
 public class TransformerFactory implements Transform {
@@ -10,8 +10,8 @@ public class TransformerFactory implements Transform {
         switch(type){
             case STRING:
                 return new WordProcessingInString();
-            case CHAR:
-                return new WordProcessingChar();
+            case REGEX:
+                return new WordProcessingRegex();
             default:
                 throw new IllegalArgumentException("Incorrect type!");
         }

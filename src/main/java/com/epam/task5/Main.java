@@ -29,7 +29,7 @@ public class Main {
 
         //transform text
         Transform transform=new TransformerFactory();
-        WordProcessing processing=transform.createTransformer(TransformType.CHAR);//CHAR
+        WordProcessing processing=transform.createTransformer(TransformType.REGEX);//REGEX
         List<String> textResult = processing.transformText(text, POSITION, LETTER);
 
 
